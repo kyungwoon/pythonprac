@@ -8,5 +8,6 @@ gus = rjson['RealtimeCityAir']['row']
 for gu in gus:
     gu_name = gu['MSRSTE_NM']
     gu_mise = gu['IDEX_MVL']
+
     if(gu_mise > 50):
         print(gu_name, gu_mise)
